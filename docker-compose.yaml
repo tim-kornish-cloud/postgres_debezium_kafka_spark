@@ -73,7 +73,7 @@ services:
       retries: 5
 
   debezium:
-    image: debezium/connect:latest
+    image: debezium/connect:2.7.3.Final
     container_name: debezium
     hostname: debezium
     depends_on:
@@ -104,7 +104,7 @@ services:
       code-with-yu:
 
   debezium-ui:
-    image: debezium/debezium-ui:latest
+    image: debezium/debezium-ui:1.9
     container_name: debezium-ui
     hostname: debezium-ui
     depends_on:
